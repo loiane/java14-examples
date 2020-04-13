@@ -27,14 +27,9 @@ public class Java14Features {
 
     private static void helpfulNullPointerExceptions(){
         String[][] matrix = new String[5][5];
-        String s = "s";
+        matrix[1] = new String[5];
 
-        if (s.equals("s")) {
-            // s = null;
-        }
-
-        if (s.toUpperCase().equals("S")
-            && matrix[1][0].toUpperCase().equals("S")) {
+        if (matrix[1][0].toUpperCase().equals("S")) {
 
         }
     }
